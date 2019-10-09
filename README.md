@@ -1,4 +1,4 @@
-# platzi_trips
+# App Catas en Casas 
 
 A new Flutter project.
 
