@@ -24,7 +24,7 @@ class CECCupertino extends StatelessWidget{
               BottomNavigationBarItem(
                   icon: Icon(Icons.person, color: Colors.indigo),
                   title: Text("")
-              )
+              ),
             ]
         ),
 

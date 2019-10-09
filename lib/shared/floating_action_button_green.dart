@@ -2,16 +2,23 @@ import 'package:flutter/material.dart';
 
 class FloatingActionButtonGreen extends StatefulWidget{
 
+  String title = "Fav1";
+
+  FloatingActionButtonGreen(this.title);
+
   @override
   State<StatefulWidget> createState(){
-    return _FloatingActionButtonGreen();
+    return _FloatingActionButtonGreen(this.title);
   }
 }
 
 class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen>{
   
+  String title = "Fav1";
   bool isFavorite = false;
   IconData buttonIcon = Icons.favorite_border;
+
+  _FloatingActionButtonGreen(this.title);
 
   void onPressedFav(){
 
@@ -43,6 +50,7 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen>{
   Widget build(BuildContext context){
 
     return FloatingActionButton(
+      heroTag: this.title,
       backgroundColor: Color(0xFF11DA53),
       mini: true,
       tooltip: "Fav",

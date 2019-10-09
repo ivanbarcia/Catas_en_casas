@@ -40,7 +40,7 @@ class CardImage extends StatelessWidget{
       alignment: Alignment(0.9, 1.1),
       children: <Widget>[
         card,
-        FloatingActionButtonGreen()
+        FloatingActionButtonGreen(pathImage)
       ],
     );
   }

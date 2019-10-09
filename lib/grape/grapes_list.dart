@@ -10,8 +10,18 @@ class GrapesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Grape Listing")), 
-        body: Container( //GrapeListTile());
+        appBar: AppBar(
+          title: Text(
+            "Lista de Vinos",
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+                fontFamily: "Lato",
+                fontWeight: FontWeight.bold
+              ),
+            )
+          ), 
+        body: Container(
           margin: EdgeInsets.only(
             top: 10.0,
             left: 20.0,
@@ -40,9 +50,9 @@ class GrapeListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.pushNamed(context, "/PLAYER_DETAILS");
-      },
+      // onTap: () {
+      //   Navigator.pushNamed(context, "/PLAYER_DETAILS");
+      // },
       child: Container(
         margin: EdgeInsets.only(top: 30.0),
         height: 100.0,
@@ -51,7 +61,7 @@ class GrapeListTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Hero(
-                tag: "vino1",
+                tag: infoGrape.vino,
                 child: Image.asset(
                   image,
                   height: 80.0,
